@@ -11,7 +11,7 @@ body {
 nav {
     display: flex;
     align-items: center;
-    margin: 1.3em 1.3em;
+    margin: 2em 2em;
 }
 
 .logo {
@@ -23,6 +23,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 0.813rem;
+    line-height: 108.2%;
 }
 
 nav a {
@@ -37,6 +38,10 @@ nav a {
 }
 
 /* Hero area */
+.latest-page {
+    cursor: pointer;
+}
+
 .hero-image {
     background-image: url("../images/article-image-hero.png");
     height: 18.313em;
@@ -74,6 +79,11 @@ nav a {
 }
 
 /* Blog Cards */
+.cards-intro {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
 
 .cards-container {
     display: flex;
@@ -131,4 +141,84 @@ footer p {
     font-weight: 400;
     color: #D7D7D7;
     margin: 0;
+}
+
+/* About page */
+main {
+    margin: 1em 2em;
+}
+
+.avatar {
+    width: 11.375em;
+}
+
+.about-header {
+    color: #151515;
+    font-size: 2.188rem;
+    font-weight: 700;
+    line-height: 108%;
+    letter-spacing: -1.045px;;
+}
+
+.about-intro h2 {
+    color: #151515;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.about-intro p {
+    color: #151515;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Latest blog page */
+article {
+    margin: 2em 2em;
+}
+.article-title {
+    color: #151515;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 108.2%;
+    letter-spacing: -0.96px;
+}
+
+.article-image {
+    width: 23.4em;
+    height: 12em;
+    object-fit: cover;
+}
+
+/* media query */
+@media(min-width: 768px) {
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    nav {
+        margin: 1em 2em;
+    }
+
+    nav a {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .hero-image {
+        height: 35em;
+        background-position: top;
+    }
+    .hero-text {
+        padding-top: 15em;
+        padding-left: 2.5em;
+    }
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .hero-text p {
+        width: 80ch;
+    }
+    .cards-container {
+        flex-direction: row;
+    }
 }
